@@ -75,6 +75,7 @@ class _SmoothStarRatingState extends State<SmoothStarRating> {
   }
 
   Widget buildStar(BuildContext context, int index) {
+    currentRating = widget.rating;
     Icon icon;
     if (index >= currentRating) {
       icon = Icon(
